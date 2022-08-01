@@ -20,9 +20,8 @@ public class Login {
 public static void Complete_Login(){
     String email = Dataset.Email;
     String password = Dataset.Password;
-    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
     Login_Email.click();
-    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
     Email_Field.sendKeys(email);
     Password_Field.sendKeys(password);
     Login_button.click();
