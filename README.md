@@ -2,10 +2,11 @@
 
 At this document you will find the test automatization for the following login page scenario.
 
-    Given a user that is not registered at Blablacar
-    When the user tries to login
-    Then the user can't login 
-    And sees the correct error message 
+        Given a user is trying to login
+        When the email's user is not registered at Blablacar 
+        Then the user can't login 
+        And sees the correct error message
+
 
 ## Language
 
